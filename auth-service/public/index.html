@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вход и регистрация</title>
+    <style>
+        body { font-family: Arial; max-width: 400px; margin: 50px auto; padding: 20px; }
+        input { display: block; width: 100%; margin: 10px 0; padding: 10px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать</h1>
+    
+    <div id="registerForm">
+        <h2>Регистрация</h2>
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Пароль">
+        <button onclick="register()">Зарегистрироваться</button>
+    </div>
+    
+    <div id="loginForm">
+        <h2>Вход</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Пароль">
+        <button onclick="login()">Войти</button>
+    </div>
+    
+    <div id="message"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

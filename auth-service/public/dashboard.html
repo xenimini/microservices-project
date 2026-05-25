@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дашборд</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; }
+        input, textarea { width: 100%; margin: 10px 0; padding: 10px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        .profile { border: 1px solid #ccc; padding: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Личный кабинет</h1>
+    <div id="userInfo"></div>
+    
+    <h2>Мой профиль</h2>
+    <input type="text" id="fullName" placeholder="Полное имя">
+    <textarea id="bio" placeholder="О себе" rows="3"></textarea>
+    <button onclick="createOrUpdateProfile()">Сохранить профиль</button>
+    
+    <div id="profileDisplay" class="profile"></div>
+    <button onclick="logout()">Выйти</button>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
